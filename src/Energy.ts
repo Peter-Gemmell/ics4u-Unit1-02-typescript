@@ -7,24 +7,24 @@
  * Since:   2022-09-15
  */
 
-import promptSync from 'prompt-sync'
+import promptSync from "prompt-sync";
 try {
-  const prompt = promptSync()
+  const prompt = promptSync();
   // let logSize: number
-  const speed = (2.998 * 10 ** 8) ** 2
-  const massString = prompt('What is the mass : ')
-  const mass = parseFloat(massString)
+  const speed = (2.998 * 10 ** 8) ** 2;
+  const massString = prompt("What is the mass : ");
+  const mass = parseFloat(massString);
   if (isNaN(mass)) {
-    throw new Error('not a number')
+    throw new Error("not a number");
   }
   if (mass <= 0) {
-    throw new Error('negative number')
+    throw new Error("negative number");
   }
 
-  const energy = mass * speed
-  console.log(`${energy} Joules would be produced`)
+  const energy = mass * speed;
+  console.log(`${energy} Joules would be produced`);
 } catch (e) {
-  console.log('Not an acceptable input')
+  console.log("Not an acceptable input");
 }
 
-console.log('\nDone.')
+console.log("\nDone.");
