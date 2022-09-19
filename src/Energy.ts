@@ -8,9 +8,9 @@
  */
 
 import promptSync from "prompt-sync";
-  const prompt = promptSync();
-  const speed = (2.998 * 10 ** 8) ** 2;
-  const massString = prompt("What is the mass : ");
+const prompt = promptSync();
+const speed = (2.998 * 10 ** 8) ** 2;
+const massString = prompt("What is the mass : ");
 try {
   // let logSize: number
   const mass = parseFloat(massString);
