@@ -8,11 +8,11 @@
  */
 
 import promptSync from "prompt-sync";
-try {
   const prompt = promptSync();
-  // let logSize: number
   const speed = (2.998 * 10 ** 8) ** 2;
   const massString = prompt("What is the mass : ");
+try {
+  // let logSize: number
   const mass = parseFloat(massString);
   if (isNaN(mass)) {
     throw new Error("not a number");
